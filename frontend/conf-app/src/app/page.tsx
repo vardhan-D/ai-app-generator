@@ -69,7 +69,8 @@ type AuditLogItem = {
   createdAt: string;
 };
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000";
 
 const SUPPORTED_FIELD_TYPES = ["text", "email", "number", "date", "password"];
 const SUPPORTED_COMPONENTS = ["form", "table"];
