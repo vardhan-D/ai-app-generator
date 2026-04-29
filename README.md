@@ -65,3 +65,8 @@ model AppRecord {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+
+Frontend URL: https://ai-app-generator-git-main-vardhan-ds-projects.vercel.app/ 
+Backend URL: https://ai-app-generator-backend.onrender.com
+GitHub Repo: https://github.com/vardhan-D/ai-app-generator
