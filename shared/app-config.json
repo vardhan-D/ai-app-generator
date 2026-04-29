@@ -1,0 +1,42 @@
+{
+  "appName": "Student Manager",
+  "plugins": ["csvImport", "notifications", "auditLog"],
+  "entities": [
+    {
+      "name": "students",
+      "fields": [
+        {
+          "name": "fullName",
+          "type": "text",
+          "label": "Full Name",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "label": "Email",
+          "required": true
+        },
+        {
+          "name": "age",
+          "type": "number",
+          "label": "Age",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "title": "Students",
+      "entity": "students",
+      "components": ["form", "table"],
+      "actions": {
+        "create": true,
+        "update": true,
+        "delete": true,
+        "csvImport": true
+      }
+    }
+  ]
+}
